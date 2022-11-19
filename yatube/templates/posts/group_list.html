@@ -18,8 +18,10 @@
   <body>
     <header>
      {% include 'includes/header.html' %}
+      <h1>{{title}}</h1>
     </header>
     <main>
+      <h1>{{text}}</h1>
       <!-- класс py-5 создает отступы сверху и снизу блока -->
       <div class="container py-5">
         <h1>Лев Толстой – зеркало русской революции.</h1>
@@ -89,10 +91,6 @@
         <!-- под последним постом нет линии -->
       </div>  
     </main>
-    <footer class="page-footer font-small blue border-top">
-      <div class="footer-copyright text-center py-3">© 2020 Copyright 
-        <p><span style="color:red">Ya</span>tube</p> 
-      </div>    
-    </footer>
+   {% include 'includes/footer.html' %}
   </body>
 </html>
